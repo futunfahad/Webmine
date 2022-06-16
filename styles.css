@@ -2,7 +2,7 @@
 :root {
     --color-background1:#360f3d;
     --color-background2:#210426;
-    --color-body-soft:#4a2b5a;
+    --color-body-soft:#804b9b;
     --color-body-strong:#292035;
     --color-text-soft:#b997d3;
     --color-text-strong:rgb(255, 255, 255);
@@ -108,4 +108,58 @@ p{
 
 .list--tick__item{
     padding-left: calc(var(--text-size) * 0.3);
+}
+
+
+/* Input groupes */
+.input-group{
+    background-color:var(--color-body-strong);
+    height: 50px;
+    max-width: 450px;
+    display: flex;
+    margin: 2rem auto;
+    transition:  box-shadow 0.5s ease-out, transform 0.5s ease-out;
+    box-shadow: -9px 9px 5px 0px rgb(0 0 0 / 23%);
+-webkit-box-shadow: -9px 9px 5px 0px rgb(0 0 0 / 23%);
+-moz-box-shadow: -9px 9px 5px 0px rgb(0 0 0 / 23%);
+
+}
+.input-group:hover{
+    transform: scale(1.05);
+    box-shadow: -9px 9px 25px 0px rgb(0 0 0 / 23%);
+    -webkit-box-shadow: -9px 9px 25px 0px rgb(0 0 0 / 23%);
+    -moz-box-shadow: -9px 9px 25px 0px rgb(0 0 0 / 23%);
+}
+.input-group__text{
+    background-color: rgba(33,4,38,0);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-right: 2rem;
+    color: var(--color-text-soft);
+    font-size: 2rem;
+    text-overflow: ellipsis;
+}
+
+.input-group__btn{
+    width: 59px;
+    margin-left: auto;
+    border: none;
+    background-color: var(--color-body-soft);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.3s ease-in-out;
+}
+
+.input-group__btn:hover{
+    cursor: pointer;
+    width: 79px;
+}
+.input-group__btn:active{
+    opacity: 0.5;
+}
+.input-group__btn>img{
+    width: 30px;
+    height: 30px;
 }
