@@ -349,3 +349,17 @@ text-decoration: line-through;
     bottom: 16px;
     text-transform: uppercase;
 }
+/* header */
+.banner{
+    transform: rotate(180deg);
+    display: block;
+    height: 30rem;
+    background: url("images/cornered-stairs.svg#svgView(preserveAspectRatio(none))") ;
+    background-size: 100% 100%;
+}
+@media screen and (min-width:786px){
+    .banner{
+        height: 40rem;
+    }
+    
+}
