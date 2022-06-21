@@ -2,7 +2,7 @@
 :root {
     --color-background1:#360f3d;
     --color-background2:#210426;
-    --color-body-soft:#804b9b;
+    --color-body-soft:#4c2c5d;
     --color-body-strong:#292035;
     --color-text-soft:#b997d3;
     --color-text-strong:rgb(255, 255, 255);
@@ -77,10 +77,13 @@ p{
 /* grid      xxx*/         
 .grid{
     display: grid;
-    gap: 8rem 5rem;
-    max-width: 290px;
-}
 
+
+}
+/* اختبريها */
+.grid .plan{
+    max-width: 290px;    gap: 8rem 5rem;
+}
 @media screen  and (min-width:800px){
     .grid--1x2{
         grid-template-columns: 50% 50%;
@@ -362,4 +365,48 @@ text-decoration: line-through;
         height: 40rem;
     }
     
+}
+
+/* testimonial */
+
+.testimonial{
+    position: relative;
+    display: inline-block;
+    width: 471px;
+    height: 500px;
+    justify-self: center;
+}
+.testimonial__img{
+    position: absolute;
+    border: solid 11px var(--color-body-strong);
+    height: 202px;
+    width: auto;
+    right: 20px;
+}
+.testimonial__textbox{
+    display: flex;
+    position: absolute;
+    background-color: var(--color-body-soft);
+    top: 189px;
+    width: 293px;
+    left: 69px;
+    padding: 18px 18px 6px;
+    flex-direction: column;
+
+}
+.testimonial__textbox__text{
+    font-weight: 400;
+    color: var(--color-text-strong);
+    font-size: 2.4rem;
+}
+.testimonial__textbox__name{
+    margin-left: auto;
+    color: var(--color-text-soft);
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+.canter{
+    margin-left: auto;
+    margin-right: auto;
 }
