@@ -80,10 +80,14 @@ p{
 
 
 }
+.center{
+    justify-items: center;
+}
 /* اختبريها */
 .grid .plan{
     max-width: 290px;    gap: 8rem 5rem;
 }
+
 @media screen and (min-width:800px){
     .grid--1x3{
         grid-template-columns: repeat(3,1fr);
@@ -424,4 +428,51 @@ text-decoration: line-through;
     .media:nth-of-type(even) .media__img{
         order: 2;
     }  
+}
+
+
+/* footer list */
+.sprite {
+    background-image: url(images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-github {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -5px;
+}
+
+.sprite-instagram {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -5px;
+}
+
+.sprite-support {
+    width: 128px;
+    height: 128px;
+    background-position: -5px -143px;
+}
+
+.sprite-twitter {
+    width: 128px;
+    height: 128px;
+    background-position: -143px -143px;
+}
+.footerlist{
+    display: flex;
+    align-items: center;
+}
+.footerlist__icon{
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+}
+.footerlist__text{
+    padding-left: 7px;
+    font-weight: 400;
+}
+.grid.footerlist{
+    justify-items: center;
 }
