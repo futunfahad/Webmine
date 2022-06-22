@@ -84,14 +84,17 @@ p{
 .grid .plan{
     max-width: 290px;    gap: 8rem 5rem;
 }
-@media screen  and (min-width:800px){
-    .grid--1x2{
-        grid-template-columns: 50% 50%;
-    }
+@media screen and (min-width:800px){
     .grid--1x3{
         grid-template-columns: repeat(3,1fr);
         max-width: 1000px;
     }
+}
+@media screen  and (min-width:768px){
+    .grid--1x2{
+        grid-template-columns: 50% 50%;
+    }
+    
     
 }
 /* list */
@@ -406,7 +409,19 @@ text-decoration: line-through;
     font-weight: 500;
     font-style: italic;
 }
-.canter{
-    margin-left: auto;
-    margin-right: auto;
+/* media */
+.media{
+    font-size: 4rem;
+    font-weight: 400;
+
+}
+.media{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    .media:nth-of-type(even) .media__img{
+        order: 2;
+    }  
 }
