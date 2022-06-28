@@ -4,14 +4,236 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="make your own website with no limits to your 
+    creativity "
+    />
+    <meta property="og:title" content="webmine" />
+    <meta
+      property="og:description"
+      content="do you want to make a website easily?"
+    />
+    <meta property="og:type" content="website" />
+    <title>webmine-make you own website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul class="list nav-bar">
+          <li class="nav-bar__item"><a href="">help</a></li>
+          <li class="nav-bar__item"><a href="">contact</a></li>
+          <li class="nav-bar__item"><a href="">about us</a></li>
+          <li class="nav-bar__icon">
+            <a href="#"> <img src="images/help.png" alt="help icon" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="banner">
+      <div class="banner__text">
+        <h1>webmine</h1>
+        <p>make your own website with no limits to your creativity</p>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="input-group center">
+        <input
+          type="text"
+          aria-label="input search"
+          placeholder="search"
+          class="input-group__text"
+        />
+        <button class="input-group__btn">
+          <img src="images/search.png" alt="" />
+        </button>
+      </div>
+    </div>
+    <section class="block container">
+      <header class="textbox">
+        <h3 class="textbox__text">We have many packges to suit your needs</h3>
+      </header>
+      <div class="grid grid--1x3 center" data-aos="fade-up">
+        <div class="plan">
+          <a class="card secondary">
+            <header class="card__header">pre made site</header>
+            <ul class="list plan__list">
+              <li class="list--tick">
+                <span class="list--tick__item">affordable</span>
+              </li>
+              <li class="list--tick">
+                <span class="list--tick__item">fast</span>
+              </li>
+              <li class="list--tick">
+                <span class="list--tick__item">easy</span>
+              </li>
+            </ul>
+            <div class="card__footer">
+              <div class="plan__price">50</div>
+            </div>
+          </a>
+        </div>
+        <div class="plan plan--popular">
+          <a class="card primary">
+            <header class="card__header bookmark">
+              custom made site
+              <div class="bookmark__text">best</div>
+            </header>
+            <ul class="list plan__list">
+              <li class="list--tick">
+                <span class="list--tick__item">professional</span>
+              </li>
+              <li class="list--tick">
+                <span class="list--tick__item">flexible</span>
+              </li>
+              <li class="list--tick">
+                <span class="list--tick__item">originative</span>
+              </li>
+            </ul>
+            <div class="card__footer">
+              <div class="plan__price">100</div>
+              <div class="badge badge--premium">premium</div>
+            </div>
+          </a>
+        </div>
+        <a href="" class="plan">
+          <div class="card secondary">
+            <header class="card__header">
+              pre made site
+              <img class="iconsale" src="images/sale.png" alt="sale icon" />
+            </header>
+            <ul class="list plan__list">
+              <li class="list--tick">
+                <span class="list--tick__item">affordable</span>
+              </li>
+              <li class="list--tick">
+                <span class="list--tick__item">fast</span>
+              </li>
+              <li class="list--tick">
+                <span class="list--tick__item">easy</span>
+              </li>
+            </ul>
+            <div class="card__footer">
+              <div class="plan__price">
+                25
+                <div class="plan__price--discount">50</div>
+              </div>
+              <div class="badge badge--sale">50%</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="block center container">
+      <header class="textbox">
+        <h3 class="textbox__text">read our customers experience</h3>
+      </header>
+      <div class="grid grid--1x2">
+        <div class="testimonial">
+          <img
+            src="images/maxjames.jpg"
+            alt="picture of a man"
+            class="testimonial__img"
+          />
+          <div class="testimonial__textbox">
+            <div class="testimonial__textbox__text">
+              webmine gave me the the ability to make my Dream website
+            </div>
+            <div class="testimonial__textbox__name">
+              max james, a graphic designer
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img
+            src="images/amyblack.jpg"
+            alt="picture of a women"
+            class="testimonial__img"
+          />
+          <div class="testimonial__textbox">
+            <div class="testimonial__textbox__text">
+              webmine made it easy for me to open my own online shop
+            </div>
+            <div class="testimonial__textbox__name">
+              amy black, a business owner
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <header class="textbox">
+        <h3 class="textbox__text">Our service has many benefits</h3>
+      </header>
+      <div class="grid grid--1x2 container media">
+        <picture data-aos="fade-right" class="media__img">
+          <source type="image/svg+xml" srcset="images/girlphone.svg" />
+          <source type="image/png" srcset="images/girlphone.png" />
+          <img src="images/girlphone.png" alt="" />
+        </picture>
+        <p>make your own website from any device and anywhere!</p>
+      </div>
+      <div class="grid grid--1x2 container media">
+        <picture class="media__img" data-aos="fade-left">
+          <source type="image/svg+xml" srcset="images/girlscreen.svg" />
+          <source type="image/png" srcset="images/girlscreen.png" />
+          <img src="images/girlscreen.png" alt="" />
+        </picture>
+        <p class="media__text">
+          our service support simple and complix websites.
+        </p>
+      </div>
+      <div class="grid grid--1x2 container media">
+        <picture class="media__img" data-aos="fade-right">
+          <source type="image/svg+xml" srcset="images/womanandman.svg" />
+          <source type="image/png" srcset="images/womanandman.png" />
+          <img src="images/womanandman.png" alt="" />
+        </picture>
+        <p class="media__text">
+          our support service is the best in the industry
+        </p>
+      </div>
+    </section>
+
+    <section class="footer grid">
+      <div class="req1 req"></div>
+      <div class="req2 req"></div>
+      <div class="req3 req">
+        <div class="textbox">
+          <h3 class="textbox__text">contact us</h3>
+        </div>
+      </div>
+      <div class="footerlistbox grid grid--1x2 center">
+        <div class="footerlist">
+          <i class="sprite sprite-github footerlist__icon"></i>
+          <a href="" class="footerlist__text">github</a>
+        </div>
+        <div class="footerlist">
+          <i class="sprite sprite-twitter footerlist__icon"></i>
+          <a href="#" class="footerlist__text">twitter</a>
+        </div>
+        <div class="footerlist">
+          <i class="sprite sprite-instagram footerlist__icon"></i>
+          <a href="#" class="footerlist__text">instagram</a>
+        </div>
+        <div class="footerlist">
+          <i class="sprite sprite-support footerlist__icon"></i>
+          <a href="#" class="footerlist__text">support</a>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
